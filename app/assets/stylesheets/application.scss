@@ -1,0 +1,68 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body { 
+  min-height: 100%;
+  background: url('bgimg.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home-page1 {
+  height: 100vh;
+}
+.sign {
+  margin-top: 23%;
+  .title {
+    color: #09314c;
+    padding-bottom: 30px;
+  }
+}
+
+.sign-description {
+  margin-top: 25%;
+  color: #09314c;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+  width: 70%;
+  height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.sign-in,
+.sign-up,
+.subscrible {
+  color: #fff;
+  background-color: #1b6292;
+}
+
+.sign-in:hover,
+.sign-up:hover,
+.subscrible:hover {
+  color: #fff;
+  background-color: #2888ca;
+  border-color: #1f6696;
+}
+
+.home-page2 {
+  .description {
+    color: #09314c;
+  }
+  h2.description{
+    font-size: 34px;
+  }
+  h5.description {
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  .btn.subscrible {
+    margin-left: 10px;
+  }
+}
+
+.footer {
+  padding: 7% 0;
+}

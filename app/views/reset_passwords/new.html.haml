@@ -1,0 +1,9 @@
+%h1 Reset password
+
+= form_tag reset_passwords_path, method: :post do
+  %div
+    = label_tag :email
+    = text_field_tag :email, nil, required: true
+
+  %div
+    = submit_tag 'Reset password'

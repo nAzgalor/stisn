@@ -1,0 +1,6 @@
+= simple_form_for User.new do |f|
+  %div
+    = f.label :email
+    = f.email_field :email
+  %div
+    = f.submit 'Register'

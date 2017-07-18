@@ -1,0 +1,16 @@
+%h1 Log in
+
+= form_tag sessions_path, method: :post do
+  %div
+    = label_tag :email
+    = email_field_tag :email, nil, required: true
+  %div
+    = label_tag :password
+    = password_field_tag :password, nil, required: true
+  %div
+    = label_tag :remember_me
+    = check_box_tag :remember_me
+  %div
+    = submit_tag 'Log in'
+
+= link_to 'Forgot your password?', new_reset_password_path

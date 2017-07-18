@@ -9,6 +9,21 @@
   </head>
 
   <body>
+
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>">
+      <%= value %>
+    </div>
+  <% end %>
+
+  <% if current_user %>
+    <%= current_user.email %>
+    <%= link_to 'Log Out', logout_path, method: :delete %>
+  <% else %>
+    <%= link_to 'Sign Up', signup_path %>
+    <%= link_to 'Log In', login_path %>
+  <% end %>
+
     <%= yield %>
   </body>
 </html>

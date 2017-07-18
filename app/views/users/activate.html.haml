@@ -1,0 +1,12 @@
+= simple_form_for @user, url: post_create_user_path do |f|
+  %div
+    = f.label :email
+    = f.email_field :email
+  %div
+    = f.label :password
+    = f.password_field :password
+  %div
+    = f.label :password_confirmation, virtual: true
+    = f.password_field :password_confirmation, virtual: true
+  %div
+    = f.submit 'End up registration'

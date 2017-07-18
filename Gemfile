@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'delayed_job_active_record'
+gem 'validates_email_format_of'
+gem 'haml'
 gem 'rails', '~> 5.1.0'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
@@ -15,11 +18,14 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'slim-rails'
+gem 'simple_form'
+gem 'sorcery'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'trailblazer-rails'
 gem 'trailblazer-cells'
 
 group :development, :test do
+  gem 'letter_opener'
   gem 'pry-rails'
   gem 'factory_girl_rails'
   gem 'faker'

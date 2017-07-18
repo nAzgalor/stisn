@@ -1,0 +1,19 @@
+%h2 Edit
+
+= simple_form_for @user do |f|
+  %div
+    = f.label :email
+    = f.email_field :email
+  %div
+    = f.label :old_password
+    = f.password_field :old_password, virtual: true
+  %div
+    = f.label :password
+    = f.password_field :password
+  %div
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation, virtual: true
+  %div
+    = f.submit 'Edit'
+  %div
+    = link_to 'Back', :back

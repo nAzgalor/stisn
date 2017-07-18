@@ -17,9 +17,6 @@
 /config/database.yml
 /config/secrets.yml
 /config/cable.yml
-/config/cable.yml.example.yml
-/config/database.yml.example.yml
-/config/secrets.yml.example.yml
 
 # Ignore Byebug command history file.
 .byebug_history
